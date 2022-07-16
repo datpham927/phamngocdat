@@ -1,0 +1,98 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(0 ,rgba(0,0,0,0.8),rgba(0,0,0,0.4)),url(/hinh/hot.jpg) no-repeat center/cover ;
+    transition: 0.4s;
+}
+#weather{
+    width: 320px;
+    border-radius: 10px;
+    padding: 20px 30px;
+    border: none;
+    background: linear-gradient(0,rgba(0,0,0,0.6) ,rgba(0,0,0,0.3)),url(/hinh/hot.jpg) no-repeat center/cover ;
+}
+.search{
+      width: 100%;
+      border: none;
+      outline: none;
+      border-radius:0 10px ;
+      padding:10px 20px;
+      font-size: 16px;
+      background-color: white;
+      opacity: 0.4;
+      transition: 0.5s;
+}
+.search:focus{
+    border-radius:10px 0;
+    opacity: 0.6;
+}
+.content{
+    margin: 20px 0;
+    text-align: center;
+    color: white;
+}
+
+.place{
+    font-size: 30px;
+    font-weight: 600;
+    opacity: 0.8;
+}
+.time{
+    font-size: 12px;
+    margin-top: 10px;
+    opacity: 0.7;
+}
+
+.temperature{
+    width: 150px;
+    background-color:rgba(225,225,225,0.6);
+    border-radius: 10px;
+    box-shadow: 3px 3px rgba(0,0,0,0.4);
+    margin: 20px auto;
+    padding:10px 5px;
+    font-size: 50px;
+}
+.short_description{
+    font-weight: 700;
+    font-size: 30px;
+    text-shadow: 3px 3px rgba(0,0,0,0.3);
+}
+.more_description{
+   font-size: 12px;
+    display: flex;
+    justify-content: space-between;
+    margin: 30px 0;
+}
+.hide{
+    visibility: hidden;
+    opacity: 0;
+}
+.hot{
+    background: linear-gradient(0 ,rgba(0,0,0,0.8),rgba(0,0,0,0.4)),url(/hinh/hot.jpg) no-repeat center/cover ;
+
+}
+.hot #weather{
+    background: linear-gradient(0,rgba(0,0,0,0.6) ,rgba(0,0,0,0.3)),url(/hinh/hot.jpg) no-repeat center/cover ;
+}
+.cold{
+    background: linear-gradient(0 ,rgba(0,0,0,0.8),rgba(0,0,0,0.4)),url(/hinh/cold.webp) no-repeat center/cover ;
+
+}
+.cold #weather{
+    background: linear-gradient(0,rgba(0,0,0,0.6) ,rgba(0,0,0,0.3)),url(/hinh/cold.webp) no-repeat center/cover ;
+}
+.wed{
+    background: linear-gradient(0 ,rgba(0,0,0,0.8),rgba(0,0,0,0.4)),url(/hinh/wed.jpg) no-repeat center/cover ;
+
+}
+.wed #weather{
+    background: linear-gradient(0,rgba(0,0,0,0.6) ,rgba(0,0,0,0.3)),url(/hinh/wed.jpg) no-repeat center/cover ;
+}
